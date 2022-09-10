@@ -10,7 +10,7 @@ Flask, Python , MySql
 
 ## API Reference
 
-View the api docs [here](https://documenter.getpostman.com/view/12610319/VVJ3zw5F#d375cf19-570f-47fb-9680-0e2e73eb337d).
+View the api docs [here](https://documenter.getpostman.com/view/12610319/VVJ3zw5F).
 
 ## License
 
