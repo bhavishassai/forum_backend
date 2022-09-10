@@ -45,8 +45,12 @@ def user(userId):
 @token_required
 def question(userId):
         jsonData = request.values.get('json')
+        data = None
+        if jsonData:
+            data = json.loads(jsonData)
+        else:
+            data = request.json
         image = request.files.get('image')
-        data = json.loads(jsonData)
         questionId = random.randint(100,100000)
         cursor.execute("SELECT * FROM questions WHERE questionId = %s",(questionId,))
         res = cursor.fetchone()
